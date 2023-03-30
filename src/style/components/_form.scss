@@ -1,0 +1,25 @@
+.form-component {
+  margin: 1rem;
+  .form-container {
+    font-size: 2rem;
+  }
+  form {
+    display: flex;
+    width: 100%;
+    background-color: $grey;
+    border: 1px solid black;
+    padding: 0.5rem;
+
+    input[type="text"] {
+      border: none;
+      width: 100%;
+      font-size: 1.1rem;
+      background-color: $grey;
+    }
+    .search {
+      span {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

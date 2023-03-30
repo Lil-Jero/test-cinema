@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/Dongle-Regular.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../assets/fonts/Dongle-Light.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", sans-serif;
+
+$color-1: #546fe4;
+$color-2: #212040;
+$color-3: rgb(100, 100, 100);
+$black: #060d2c;
+$grey: rgb(228, 228, 228);
+$white: rgb(238, 238, 238);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-1;
+}
+
+body {
+  background: $grey;
+  color: $black;
+}
+li {
+  list-style: none;
+}
+.result {
+  overflow: scroll;
+  min-height: 400px;
+  max-height: 400px;
+  margin: auto;
+  width: 700px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.result::-webkit-scrollbar {
+  display: none;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.form-component {
+  border: 1px solid grey;
+  padding: 1rem;
+}
